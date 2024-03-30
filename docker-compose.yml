@@ -22,10 +22,11 @@ services:
       ## Location for rclone mount to host
       - /pd_zurg/mnt:/data:shared       
     environment:
-      - TZ=
+      - TZ=Europe/London
       ## Zurg Required Settings
-      - ZURG_ENABLED=true      
-      - RD_API_KEY=
+      - ZURG_ENABLED=true
+      - RD_API_KEY=      
+      - AD_API_KEY=
       ## Zurg Optional Settings
      # - ZURG_LOG_LEVEL=DEBUG
      # - ZURG_VERSION=v0.9.2-hotfix.4
@@ -52,7 +53,7 @@ services:
      # - RCLONE_VFS_READ_CHUNK_SIZE_LIMIT=1G
      # - RCLONE_TRANSFERS=8
       ## Plex Debrid Required Settings
-      - PD_ENABLED=true
+      - PD_ENABLED=false
       ## To utilize plex_debrid with Plex, the following environment variables are required
       - PLEX_USER=
       - PLEX_TOKEN=

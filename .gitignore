@@ -368,3 +368,9 @@ FodyWeavers.xsd
 **/log/
 *.env
 /config
+
+#ignore .vscode anywhere
+.vscode/
+**/.vscode/**
+
+scratch
